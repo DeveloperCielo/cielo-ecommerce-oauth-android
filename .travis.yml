@@ -11,13 +11,12 @@ env:
     - ADB_INSTALL_TIMEOUT=8
 
 before_install:
-  - chmod +x gradlew
   - touch $HOME/.android/repositories.cfg
   - yes | sdkmanager "platforms;android-28"
   - yes | sdkmanager "build-tools;28.0.3"
 
 script:
-  - ./gradlew clean :cieloecommerceoauth:assembleDebug :cieloecommerceoauth:assembleRelease
+  - ./gradlew clean :cieloecommerceoautho:assembleDebug :cieloecommerceoauth:assembleRelease
 
 # deploy section
 deploy:

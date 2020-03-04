@@ -1,0 +1,2 @@
+include ':app', ':cieloecommerceoauth'
+rootProject.name='cielo-ecommerce-oauth-android'
