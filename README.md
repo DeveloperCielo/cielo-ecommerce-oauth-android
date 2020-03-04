@@ -1,8 +1,8 @@
-# OAUTH-CIELO
+# CIELO-ECOMMERCE-OAUTH-ANDROID
 
 # Requisitos
 
-- Android Studio version 3.1+ com Android SDK Platform version 4.4+ (API level 19+)
+- Android Studio version 3.1+ com Android SDK Platform version 5.0+ (API level 21+)
 
 # Instalação
 
@@ -14,7 +14,7 @@
 
 ## Configuração
 
-Para iniciar o cliente do SDK será necessário informar cliente id e cliente secret:
+Para iniciar o cliente do SDK será necessário informar client id e client secret:
 ```kotlin
 val client = HttpCredentialsClient(
     Environment.SANDBOX,
@@ -26,8 +26,10 @@ val client = HttpCredentialsClient(
 ## Utilização
 ```kotlin
 client.getOAuthCredentials({
+    // onSuccessCallback
     textView.text = it.token
 },{
+    // onError
     textView.text = it
 })
 ```

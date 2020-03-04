@@ -34,7 +34,7 @@ bintray {
     configurations = ['archives']
     publications = ['aar']
     pkg {
-        repo = 'cieloecommerceoauth'
+        repo = 'cielo-ecommerce-oauth-android'
         name = 'cieloecommerceoauth'
         licenses = ['MIT']
         desc = ''
