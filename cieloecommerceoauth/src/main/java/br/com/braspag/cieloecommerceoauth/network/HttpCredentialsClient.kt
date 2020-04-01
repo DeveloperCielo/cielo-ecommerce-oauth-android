@@ -1,6 +1,6 @@
 package br.com.braspag.cieloecommerceoauth.network
 
-import br.com.braspag.cieloecommerceoauthexample.BuildConfig
+import br.com.braspag.cieloecommerceoauth.BuildConfig
 import br.com.braspag.cieloecommerceoauth.extensions.toStatusCode
 import br.com.braspag.cieloecommerceoauth.model.AccessToken
 import br.com.braspag.cieloecommerceoauth.model.AuthClientModel
