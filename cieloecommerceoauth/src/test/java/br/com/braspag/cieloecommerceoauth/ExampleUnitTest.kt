@@ -1,4 +1,4 @@
-package br.com.braspag.cieloecommerceoauthexample
+package br.com.braspag.cieloecommerceoauth
 
 import org.junit.Test
 
