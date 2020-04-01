@@ -2,6 +2,31 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+ext {
+    bintrayRepo = project.name
+    bintrayName = project.name
+
+    publishedGroupId = 'com.mauricifj'
+    libraryName = project.name
+    artifact = project.name
+
+    libraryDescription = 'Library para auxiliar na obtenção do token oauth'
+
+    siteUrl = 'https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android'
+    gitUrl = 'https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'mauricifj'
+    developerName = 'Maurici Ferreira Junior'
+    developerEmail = 'm.f.j@hotmail.com'
+    developerUrl = "https://github.com/Mauricifj"
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://www.mit.edu/~amini/LICENSE.md'
+    allLicenses = ["MIT"]
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -31,18 +56,15 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
 
     // Retrofit & Gson
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-apply from: 'deploy.gradle'
+apply from: 'publish.gradle'
