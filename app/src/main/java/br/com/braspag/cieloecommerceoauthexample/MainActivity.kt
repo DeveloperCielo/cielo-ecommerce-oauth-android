@@ -13,8 +13,8 @@ class MainActivity : Activity() {
 
         val client = HttpCredentialsClient(
             Environment.SANDBOX,
-            "df66638b-3ef4-421f-a18e-e20dea38d97d",
-            "q13XZ48haFg4EhAS2cjcoyX7OzRECYysY6T9TJLmKNM="
+            "<YOUR-CLIENT-ID>",
+            "<YOUR-CLIENT-SECRET>"
         )
 
         client.getOAuthCredentials({
