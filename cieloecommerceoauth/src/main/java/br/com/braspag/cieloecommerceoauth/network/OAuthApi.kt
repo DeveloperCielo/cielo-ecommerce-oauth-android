@@ -1,6 +1,6 @@
-package br.com.braspag.cieloecommerceoauthexample.network
+package br.com.braspag.cieloecommerceoauth.network
 
-import br.com.braspag.cieloecommerceoauthexample.model.AuthClientModel
+import br.com.braspag.cieloecommerceoauth.model.AuthClientModel
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded

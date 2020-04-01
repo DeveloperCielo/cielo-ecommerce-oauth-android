@@ -1,9 +1,9 @@
-package br.com.braspag.cieloecommerceoauthexample.network
+package br.com.braspag.cieloecommerceoauth.network
 
 import br.com.braspag.cieloecommerceoauthexample.BuildConfig
-import br.com.braspag.cieloecommerceoauthexample.extensions.toStatusCode
-import br.com.braspag.cieloecommerceoauthexample.model.AccessToken
-import br.com.braspag.cieloecommerceoauthexample.model.AuthClientModel
+import br.com.braspag.cieloecommerceoauth.extensions.toStatusCode
+import br.com.braspag.cieloecommerceoauth.model.AccessToken
+import br.com.braspag.cieloecommerceoauth.model.AuthClientModel
 import okhttp3.Credentials
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,7 +22,9 @@ class HttpCredentialsClient(
     ) {
         val authorizationHeaderValue = Credentials.basic(clientId, clientSecret)
 
-        val webClient = WebClient(setEnvironment(environment))
+        val webClient = WebClient(
+            setEnvironment(environment)
+        )
         val call = webClient.createService(OAuthApi::class.java)
             .getTokenOAuth(authorizationHeaderValue, "client_credentials")
 

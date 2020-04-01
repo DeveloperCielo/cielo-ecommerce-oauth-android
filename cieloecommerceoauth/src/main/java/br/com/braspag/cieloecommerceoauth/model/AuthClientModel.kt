@@ -1,4 +1,4 @@
-package br.com.braspag.cieloecommerceoauthexample.model
+package br.com.braspag.cieloecommerceoauth.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

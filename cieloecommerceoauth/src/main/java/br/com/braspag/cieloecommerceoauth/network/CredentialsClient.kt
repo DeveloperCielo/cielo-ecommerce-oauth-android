@@ -1,6 +1,6 @@
-package br.com.braspag.cieloecommerceoauthexample.network
+package br.com.braspag.cieloecommerceoauth.network
 
-import br.com.braspag.cieloecommerceoauthexample.model.AccessToken
+import br.com.braspag.cieloecommerceoauth.model.AccessToken
 
 interface CredentialsClient {
     fun getOAuthCredentials(

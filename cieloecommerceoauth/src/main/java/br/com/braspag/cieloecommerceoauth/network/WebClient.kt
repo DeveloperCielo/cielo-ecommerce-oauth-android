@@ -1,4 +1,4 @@
-package br.com.braspag.cieloecommerceoauthexample.network
+package br.com.braspag.cieloecommerceoauth.network
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit.Builder

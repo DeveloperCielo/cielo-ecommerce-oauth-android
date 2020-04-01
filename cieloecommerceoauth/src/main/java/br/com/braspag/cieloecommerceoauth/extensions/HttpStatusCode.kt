@@ -1,4 +1,4 @@
-package br.com.braspag.cieloecommerceoauthexample.extensions
+package br.com.braspag.cieloecommerceoauth.extensions
 
 enum class HttpStatusCode(val code: Int) {
     Ok(200),

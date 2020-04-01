@@ -1,4 +1,4 @@
-package br.com.braspag.cieloecommerceoauthexample.model
+package br.com.braspag.cieloecommerceoauth.model
 
 import java.util.Calendar
 import java.util.Date
