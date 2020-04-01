@@ -10,7 +10,7 @@ ext {
     libraryName = project.name
     artifact = project.name
 
-    libraryDescription = 'Library para auxiliar na obtenção do token oauth'
+    libraryDescription = 'Android Library para auxiliar na obtenção do AccessToken para OAuth Cielo'
 
     siteUrl = 'https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android'
     gitUrl = 'https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android.git'
