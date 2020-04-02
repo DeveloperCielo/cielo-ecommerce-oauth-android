@@ -14,6 +14,8 @@ Android Library para auxiliar na obtenção do AccessToken para OAuth Cielo
     ìmplementation 'br.com.braspag:cieloecommerceoauth:1.0.0'
 ```
 
+- Ou baixar manualmente através da versão mais atual encontrada em [releases](https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android/releases)
+
 ## Modo de uso
 
 ### Configuração
