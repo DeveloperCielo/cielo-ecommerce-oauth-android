@@ -6,7 +6,7 @@ ext {
     bintrayRepo = project.name
     bintrayName = project.name
 
-    publishedGroupId = 'com.mauricifj'
+    publishedGroupId = 'br.com.braspag'
     libraryName = project.name
     artifact = project.name
 
