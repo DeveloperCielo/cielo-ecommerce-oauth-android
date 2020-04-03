@@ -11,10 +11,14 @@ Android Library para auxiliar na obtenção do AccessToken para OAuth Cielo
 - Será necessário adicionar a seguinte dependência ao **build.gradle** do seu app module:
 
 ```kotlin
-    ìmplementation 'br.com.braspag:cieloecommerceoauth:1.0.0'
+    implementation 'br.com.braspag:cieloecommerceoauth:1.0.0'
 ```
 
-- Ou baixar manualmente através da versão mais atual encontrada em [releases](https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android/releases)
+- Ou baixar o pacote aar manualmente através da versão mais atual encontrada em [releases](https://github.com/DeveloperCielo/cielo-ecommerce-oauth-android/releases), adicionar esse pacote na pasta *libs* do seu app module e depois adicionar a seguinte linha ao *build.gradle* do seu app module:
+
+```kotlin
+    implementation files('libs/cieloecommerceoauth-release.aar')
+```
 
 ## Modo de uso
 
