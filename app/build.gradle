@@ -35,5 +35,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // OAuthCielo
-    implementation 'com.mauricifj:cieloecommerceoauth:1.0.0'
+    implementation 'br.com.braspag:cieloecommerceoauth:1.0.0'
 }
