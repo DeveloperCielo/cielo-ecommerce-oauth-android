@@ -1,4 +1,4 @@
-# CIELO-ECOMMERCE-OAUTH-ANDROID [![Status](https://travis-ci.com/DeveloperCielo/cielo-ecommerce-oauth-android.svg?branch=master)](https://travis-ci.com/DeveloperCielo/cielo-ecommerce-oauth-android) [![Download](https://api.bintray.com/packages/braspag/cieloecommerceoauth/cieloecommerceoauth/images/download.svg?version=1.0.0) ](https://bintray.com/braspag/cieloecommerceoauth/cieloecommerceoauth/1.0.0/link)
+# CIELO-ECOMMERCE-OAUTH-ANDROID [![Status](https://travis-ci.com/DeveloperCielo/cielo-ecommerce-oauth-android.svg?branch=master)](https://travis-ci.com/DeveloperCielo/cielo-ecommerce-oauth-android) [ ![Download](https://api.bintray.com/packages/braspag/cieloecommerceoauth/cieloecommerceoauth/images/download.svg) ](https://bintray.com/braspag/cieloecommerceoauth/cieloecommerceoauth/_latestVersion)
 
 Android Library para auxiliar na obtenção do AccessToken para OAuth Cielo
 
