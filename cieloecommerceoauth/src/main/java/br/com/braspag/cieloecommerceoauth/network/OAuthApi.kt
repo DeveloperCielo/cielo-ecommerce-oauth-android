@@ -12,6 +12,7 @@ interface OAuthApi {
     @POST("v2/token")
     fun getTokenOAuth(
         @Header("authorization") authorization: String,
-        @Field("grant_type") grant_type: String
+        @Header("x-sdk-version") x_sdk_version: String,
+        @Field("grant_type") grant_type: String = "client_credentials"
     ): Call<AuthClientModel>
 }

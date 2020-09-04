@@ -1,5 +1,6 @@
 package br.com.braspag.cieloecommerceoauth.network
 
+import android.util.Log
 import br.com.braspag.cieloecommerceoauth.BuildConfig
 import br.com.braspag.cieloecommerceoauth.extensions.toStatusCode
 import br.com.braspag.cieloecommerceoauth.model.AccessToken
@@ -21,12 +22,15 @@ class HttpCredentialsClient(
         onError: (error: String) -> Unit
     ) {
         val authorizationHeaderValue = Credentials.basic(clientId, clientSecret)
+        val xSdkVersion = BuildConfig.X_SDK_VERSION
+
+        Log.d("X_SDK_VERSION", xSdkVersion)
 
         val webClient = WebClient(
             setEnvironment(environment)
         )
         val call = webClient.createService(OAuthApi::class.java)
-            .getTokenOAuth(authorizationHeaderValue, "client_credentials")
+            .getTokenOAuth(authorizationHeaderValue, xSdkVersion)
 
         call.enqueue(object : Callback<AuthClientModel> {
             override fun onFailure(call: Call<AuthClientModel>, t: Throwable) {
