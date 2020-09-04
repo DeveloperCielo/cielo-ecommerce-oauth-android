@@ -16,4 +16,4 @@ deploy:
   provider: script
   script: ./gradlew :cieloecommerceoauth:bintrayUpload
   on:
-    branch: master
+    tags: true
