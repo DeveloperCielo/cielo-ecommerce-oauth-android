@@ -71,7 +71,7 @@ afterEvaluate {
         user = bintray_user
         key = bintray_key
         publications = ['release']
-        override = true
+        override = false
         pkg {
             repo = bintrayRepo
             name = bintrayName
