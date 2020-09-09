@@ -49,8 +49,8 @@ android {
     }
 
     buildTypes.each {
-        it.buildConfigField('String', 'URL_OAUTH_SANDBOX', "\"https://meucheckoutsandbox.braspag.com.br/api/public/\"")
-        it.buildConfigField('String', 'URL_OAUTH_PRODUCTION', "\"https://cieloecommerce.cielo.com.br/api/public/\"")
+        it.buildConfigField('String', 'URL_OAUTH_SANDBOX', "\"https://authsandbox.cieloecommerce.cielo.com.br/\"")
+        it.buildConfigField('String', 'URL_OAUTH_PRODUCTION', "\"https://auth.braspag.com.br/\"")
         it.buildConfigField('String', 'X_SDK_VERSION', "\"CieloOAuth-Android@$libraryVersion\"")
     }
 

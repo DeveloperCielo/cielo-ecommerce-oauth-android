@@ -9,7 +9,7 @@ import retrofit2.http.POST
 
 interface OAuthApi {
     @FormUrlEncoded
-    @POST("v2/token")
+    @POST("oauth2/token")
     fun getTokenOAuth(
         @Header("authorization") authorization: String,
         @Header("x-sdk-version") x_sdk_version: String,
